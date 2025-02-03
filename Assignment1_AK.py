@@ -1,9 +1,9 @@
-#Amy Kavanagh 24102830 27/jan/2025
+#Amy Kavanagh 24102830 27/January/2025
 
 #Defining the main function to perform the task of gathering
 #information on number of customers per business day
 def main():
-    # Creating a list to store the number of customers
+    # Creating an empty list to store the number of customers
     customers = []
     #asking user to input the number of customer from days 1-7
     print("Please enter the number of customers per day:")
@@ -25,14 +25,17 @@ def main():
             except ValueError:
                 #shows the user what to do to get the program to run effectively
                 print("Please enter a valid integer")
-
+    #calculates the max number of customers
     max_customers = max(customers)
+    #calculates the minimum number of customers
     min_customers = min(customers)
+    #calculates the average number of customers
     avg_customers = sum(customers) / len(customers)
-
+    #Prints the calculations from above
     print("\nWeekly customers")
     print(f"Max customers: {max_customers}")
     print(f"Min customers: {min_customers}")
+    #calculates to two decimal places
     print(f"Average customers: {avg_customers:.2f}")
 
 #checks if program is running in the main scope
